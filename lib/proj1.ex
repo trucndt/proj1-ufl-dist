@@ -4,7 +4,7 @@ defmodule Proj1 do
     remainder = rem(n, noActors)
     runActors = if workUnit == 0, do: remainder, else: noActors
 
-    ### Calculate and assisn work units to each actor
+    ### Calculate and assisn work unit to each actor
     for act <- 1..runActors do
       if act <= remainder do
         start = (act - 1) * (workUnit + 1) + 1
@@ -30,7 +30,7 @@ end
 
 defmodule Worker do
   def sumOfSquares(n) do
-    n * (n + 1) * (2 * n + 1) / 6
+    div(n * (n + 1) * (2 * n + 1), 6)
   end
 
   def checkSumToSquare(first, k) do
