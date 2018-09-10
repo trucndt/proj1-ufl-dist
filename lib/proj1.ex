@@ -54,6 +54,49 @@ defmodule Proj1 do
       end
     end
   end
+
+  @doc """
+    Starting point of the program if running on 2 machines
+    @param n  input n
+    @param k  input k
+    @param noActors desired number of actors
+    @param node2  name@host of the remote machine
+  """
+  def startBoss(n, k, noActors, node2) do
+    if Node.connect(node2) == false do
+      Process.exit(self(), "cannot connect to #{node2}")
+    end
+
+    # Calculate expected amount of work
+    workUnit = div(n, noActors)
+    remainder = rem(n, noActors)
+    runActors = if workUnit == 0, do: remainder, else: noActors
+
+    ### Actors on 1st machine
+    for act <- 1..div(runActors, 2) do
+      if act <= remainder do
+        start = (act - 1) * (workUnit + 1) + 1
+        spawn(Worker, :findPerfectSquare, [self(), start, workUnit + 1, k])
+      else
+        start = remainder * (workUnit + 1) + (act - 1 - remainder) * workUnit + 1
+        spawn(Worker, :findPerfectSquare, [self(), start, workUnit, k])
+      end
+    end
+
+    ### Actors on 2nd machine
+    for act <- div(runActors, 2)+1..runActors do
+      if act <= remainder do
+        start = (act - 1) * (workUnit + 1) + 1
+        Node.spawn(node2, Worker, :findPerfectSquare, [self(), start, workUnit + 1, k])
+      else
+        start = remainder * (workUnit + 1) + (act - 1 - remainder) * workUnit + 1
+        Node.spawn(node2, Worker, :findPerfectSquare, [self(), start, workUnit, k])
+      end
+    end
+
+    ### Wait until all actors finished
+    waitForWorkers(noActors)
+  end
 end
 
 defmodule Worker do

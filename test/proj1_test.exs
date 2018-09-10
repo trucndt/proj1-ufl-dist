@@ -2,7 +2,7 @@ defmodule Proj1Test do
   use ExUnit.Case
   doctest Proj1
 
-  test "greets the world" do
-    assert Proj1.hello() == :world
+  test "case 1: 3 2" do
+    assert Proj1.startBoss(3, 2, 4) |> Enum.sort == [3]
   end
 end
