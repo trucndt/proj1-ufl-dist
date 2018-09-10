@@ -3,6 +3,7 @@
 * UFID: 9482-7764
 
 # Instructions
+The main source code is in **lib/proj1.ex**
 ### Configuration and Compilation
 To configure the desired number of workers, modify the first line in proj1.exs
 
