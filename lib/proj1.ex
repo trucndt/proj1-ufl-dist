@@ -1,5 +1,12 @@
 defmodule Proj1 do
   def startBoss(n, k, noActors) do
+    runActors = workAssignment(n, k, noActors)
+
+    ### Wait until all actors finished
+    waitForWorkers(0, runActors)
+  end
+
+  def workAssignment(n, k, noActors) do
     workUnit = div(n, noActors)
     remainder = rem(n, noActors)
     runActors = if workUnit == 0, do: remainder, else: noActors
@@ -15,8 +22,7 @@ defmodule Proj1 do
       end
     end
 
-    ### Wait until all actors finished
-    waitForWorkers(0, runActors)
+    runActors
   end
 
   def waitForWorkers(count, noActors) do
