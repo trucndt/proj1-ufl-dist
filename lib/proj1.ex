@@ -58,7 +58,7 @@ end
 
 defmodule Worker do
   @moduledoc """
-    Worker actor hanlder
+    Worker actor handler
   """
 
   @doc """
