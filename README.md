@@ -109,7 +109,7 @@ Half of the actors will run on the local machine, the other half will run on the
 4. Line 13: edit name@host of the remote machine (Ex: m2@192.168.50.26)
 
 ## Run
-#### On the remote machine,
+### On the remote machine
 Execute the following command:
 ```
 iex --name <name@host> --cookie truc -S mix
@@ -121,7 +121,7 @@ iex --name <name@host> --cookie truc -S mix
 iex --name m2@192.168.50.26 --cookie truc -S mix
 ```
 
-#### On the local machine
+### On the local machine
 Execute the following command (the number of sequences **n** should be greater than _noActors_):
 ```
 $ mix run proj1.exs 40 24
