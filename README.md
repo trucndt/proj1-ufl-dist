@@ -4,8 +4,10 @@
 
 # Instructions
 The main source code is in **lib/proj1.ex**
+
+_The instructions for the bonus part is given at the end of this file_
 ### Configuration and Compilation
-To configure the desired number of workers, modify the first line in proj1.exs
+To configure the desired number of workers, modify the first line in **proj1.exs**
 
 To compile:
 ```
@@ -94,3 +96,41 @@ sys     0m0.066s
 - CPU time is 728.488 + 0.066 = 728.554
 - REAL time is 96.164
 - Ratio CPU/REAL = 7.576
+
+# BONUS
+This project can successfully run on 2 machines.
+
+Half of the actors will run on the local machine, the other half will run on the remote machine.
+
+## Configuration
+1. In **proj1.exs**, the _noActors_ (first line) should be an even number
+2. _Uncomment_ lines 11-14, _comment_ line 7
+3. Line 11: edit name@host of the local machine (Ex: m1@192.168.50.25)
+4. Line 13: edit name@host of the remote machine (Ex: m2@192.168.50.26)
+
+## Run
+#### On the remote machine,
+Execute the following command:
+```
+iex --name <name@host> --cookie truc -S mix
+```
+- name@host: define name and host of the machine (Ex: m2@192.168.50.26)
+
+**Example:**
+```
+iex --name m2@192.168.50.26 --cookie truc -S mix
+```
+
+#### On the local machine
+Execute the following command (the number of sequences **n** should be greater than _noActors_):
+```
+$ mix run proj1.exs 40 24
+```
+
+The output will be
+```
+1
+9
+20
+25
+```

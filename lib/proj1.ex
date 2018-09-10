@@ -63,6 +63,7 @@ defmodule Proj1 do
     @param node2  name@host of the remote machine
   """
   def startBoss(n, k, noActors, node2) do
+    # Connect to node2
     if Node.connect(node2) == false do
       Process.exit(self(), "cannot connect to #{node2}")
     end
