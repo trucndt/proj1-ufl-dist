@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69d7f960-3fba-4cfa-8c9e-556958c70b3f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/lib/proj1.ex" beforeDir="false" afterPath="$PROJECT_DIR$/lib/proj1.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proj1.exs" beforeDir="false" afterPath="$PROJECT_DIR$/proj1.exs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/proj1_test.exs" beforeDir="false" afterPath="$PROJECT_DIR$/test/proj1_test.exs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,14 +42,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="ex" value="4369" />
-          <entry key="exs" value="774" />
+          <entry key="exs" value="853" />
           <entry key="md" value="1735" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="BEAM Assembly file" value="1" />
-          <entry key="Elixir Script" value="774" />
+          <entry key="Elixir Script" value="853" />
           <entry key="Elixir file" value="4372" />
           <entry key="Markdown" value="1731" />
         </counts>
@@ -59,10 +58,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/proj1.ex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1005">
+            <state relative-caret-position="-318">
               <caret line="67" column="7" lean-forward="true" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
             </state>
           </provider>
@@ -77,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/proj1_test.exs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="25" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="25" />
+            <state relative-caret-position="75">
+              <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -121,6 +120,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/lib/proj1.ex" />
         <option value="$PROJECT_DIR$/proj1.exs" />
+        <option value="$PROJECT_DIR$/test/proj1_test.exs" />
       </list>
     </option>
   </component>
@@ -253,17 +253,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/proj1_test.exs">
+    <entry file="file://$PROJECT_DIR$/lib/proj1.ex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="25" />
+        <state relative-caret-position="-318">
+          <caret line="67" column="7" lean-forward="true" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/proj1.ex">
+    <entry file="file://$PROJECT_DIR$/test/proj1_test.exs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="67" column="7" lean-forward="true" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
+        <state relative-caret-position="75">
+          <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
         </state>
       </provider>
     </entry>
