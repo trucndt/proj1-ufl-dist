@@ -96,7 +96,7 @@ defmodule Proj1 do
     end
 
     ### Wait until all actors finished
-    waitForWorkers(noActors)
+    waitForWorkers(runActors)
   end
 end
 
