@@ -1,21 +1,30 @@
-# Proj1
+# Student info
+* Name: Truc D Nguyen
+* UFID: 9482-7764
 
-**TODO: Add description**
-
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `proj1` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:proj1, "~> 0.1.0"}
-  ]
-end
+# Instructions
+### Compilation
+```
+mix compile
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/proj1](https://hexdocs.pm/proj1).
+### Run syntax
+```
+mix run proj1.exs <n> <k>
+```
+- n: input _N_
+- k: input _k_
 
+### Output 
+On each line is the first number in the sequence for each solution.
+
+### Example
+```
+$ mix run proj1.exs 40 24
+1
+9
+20
+25
+```
+
+# Assigning work unit
